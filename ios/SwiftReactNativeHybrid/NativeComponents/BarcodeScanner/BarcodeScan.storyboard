@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="geR-Tg-cNT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BarcodeScanViewController-->
+        <scene sceneID="nXs-sZ-6hS">
+            <objects>
+                <viewController storyboardIdentifier="BarcodeScanViewController" id="geR-Tg-cNT" userLabel="BarcodeScanViewController" customClass="BarcodeScanViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E8V-lt-apj" customClass="RMScannerView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="la4-C4-PWk" customClass="RMScannerView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spz-f8-3Hh">
+                                        <rect key="frame" x="10" y="10" width="355" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Spz-f8-3Hh" firstAttribute="top" secondItem="la4-C4-PWk" secondAttribute="top" constant="10" id="29N-j6-ciR"/>
+                                    <constraint firstItem="Spz-f8-3Hh" firstAttribute="leading" secondItem="la4-C4-PWk" secondAttribute="leading" constant="10" id="NTR-Mo-ZLW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Spz-f8-3Hh" secondAttribute="trailing" constant="10" id="VKe-fk-XPp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w6S-Qu-mSf" firstAttribute="trailing" secondItem="la4-C4-PWk" secondAttribute="trailing" id="0oQ-HT-lRN"/>
+                            <constraint firstItem="la4-C4-PWk" firstAttribute="top" secondItem="E8V-lt-apj" secondAttribute="top" id="Ly5-KB-qKH"/>
+                            <constraint firstAttribute="bottom" secondItem="la4-C4-PWk" secondAttribute="bottom" id="WSL-lS-Ett"/>
+                            <constraint firstItem="la4-C4-PWk" firstAttribute="leading" secondItem="w6S-Qu-mSf" secondAttribute="leading" id="nmg-gg-7VU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w6S-Qu-mSf"/>
+                        <connections>
+                            <outlet property="delegate" destination="geR-Tg-cNT" id="BJc-ov-SCv"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="f4z-R3-pJM">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="KRB-tb-1tH">
+                            <connections>
+                                <action selector="stopScannning:" destination="geR-Tg-cNT" id="ZbC-YP-dSX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Start" id="Jay-1P-fzS"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scannerView" destination="la4-C4-PWk" id="lpt-Lh-lJH"/>
+                        <outlet property="sessionToggleButton" destination="Jay-1P-fzS" id="iQI-pB-QFV"/>
+                        <outlet property="statusText" destination="Spz-f8-3Hh" id="MdU-M9-GRc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKG-FZ-8xv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463.19999999999999" y="-112.89355322338831"/>
+        </scene>
+    </scenes>
+</document>

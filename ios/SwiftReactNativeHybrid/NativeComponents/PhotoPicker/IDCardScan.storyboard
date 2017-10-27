@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x1F-hW-lUg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--IDCardCropViewController-->
+        <scene sceneID="OVf-QN-Sfc">
+            <objects>
+                <viewController storyboardIdentifier="IDCardCropViewController" id="3CN-Sc-FDg" userLabel="IDCardCropViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vjm-DD-Vjb"/>
+                        <viewControllerLayoutGuide type="bottom" id="kOZ-tp-rPQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dqv-1M-jqf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAa-QH-f5j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Cancel" id="mY8-T2-cm5">
+                                        <connections>
+                                            <action selector="onTouchCancelButton:" destination="3CN-Sc-FDg" id="jtw-9p-rUo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jW8-nz-Hw1"/>
+                                    <barButtonItem title="Crop" id="4TO-DM-mTr">
+                                        <connections>
+                                            <action selector="onTouchCropButton:" destination="3CN-Sc-FDg" id="6iV-Pn-N6f"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kJ-Q5-Bbt">
+                                <rect key="frame" x="298" y="29" width="61" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="cvl-RI-oK6"/>
+                                    <constraint firstAttribute="height" constant="21" id="umZ-zf-uu6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzI-XW-I7H" customClass="HorizontalDial" customModule="HorizontalDial">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="fR8-ds-gvo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                        <real key="value" value="-80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tick">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="centerMarkColor">
+                                        <color key="value" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="centerMarkWidth">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="centerMarkRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="markColor">
+                                        <color key="value" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="markWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="markCount">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableRange" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="verticalAlign" value="center"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="centerMarkHeightRatio">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="3CN-Sc-FDg" id="PHe-b0-Mj2"/>
+                                </connections>
+                            </view>
+                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aU4-UL-Ex6">
+                                <rect key="frame" x="14" y="68" width="278" height="31"/>
+                                <connections>
+                                    <action selector="onChandeAngleSliderValue:" destination="3CN-Sc-FDg" eventType="valueChanged" id="L4f-E5-qvl"/>
+                                    <action selector="onEndTouchAngleControl:" destination="3CN-Sc-FDg" eventType="touchUpInside" id="5nb-el-udg"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1kJ-Q5-Bbt" firstAttribute="trailing" secondItem="dqv-1M-jqf" secondAttribute="trailingMargin" id="22e-jo-Np4"/>
+                            <constraint firstItem="1kJ-Q5-Bbt" firstAttribute="leading" secondItem="aU4-UL-Ex6" secondAttribute="trailing" constant="8" id="7xu-sY-NXn"/>
+                            <constraint firstAttribute="trailing" secondItem="jzI-XW-I7H" secondAttribute="trailing" id="BAJ-6T-f7n"/>
+                            <constraint firstItem="jzI-XW-I7H" firstAttribute="leading" secondItem="dqv-1M-jqf" secondAttribute="leading" id="BkG-k9-6jo"/>
+                            <constraint firstItem="SAa-QH-f5j" firstAttribute="top" secondItem="dqv-1M-jqf" secondAttribute="top" id="GfL-AH-FSQ"/>
+                            <constraint firstItem="aU4-UL-Ex6" firstAttribute="leading" secondItem="dqv-1M-jqf" secondAttribute="leading" constant="16" id="ZvS-kd-VCL"/>
+                            <constraint firstItem="1kJ-Q5-Bbt" firstAttribute="top" secondItem="vjm-DD-Vjb" secondAttribute="bottom" constant="9" id="aCd-rE-H6J"/>
+                            <constraint firstAttribute="trailing" secondItem="SAa-QH-f5j" secondAttribute="trailing" id="cQn-Ff-dxW"/>
+                            <constraint firstItem="aU4-UL-Ex6" firstAttribute="top" secondItem="vjm-DD-Vjb" secondAttribute="bottom" constant="48" id="civ-UZ-ZYc"/>
+                            <constraint firstItem="kOZ-tp-rPQ" firstAttribute="top" secondItem="jzI-XW-I7H" secondAttribute="bottom" id="kHw-YG-Bhm"/>
+                            <constraint firstItem="SAa-QH-f5j" firstAttribute="leading" secondItem="dqv-1M-jqf" secondAttribute="leading" id="lPk-nS-Sde"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mdw-Tk-68O"/>
+                    </view>
+                    <connections>
+                        <outlet property="angleLabel" destination="1kJ-Q5-Bbt" id="S7J-Bh-ICB"/>
+                        <outlet property="angleSlider" destination="aU4-UL-Ex6" id="IIC-ec-xXV"/>
+                        <outlet property="cancelButton" destination="mY8-T2-cm5" id="Cc7-VA-yER"/>
+                        <outlet property="cropButton" destination="4TO-DM-mTr" id="Mk7-YQ-eCX"/>
+                        <outlet property="horizontalDial" destination="jzI-XW-I7H" id="oLo-lw-ml4"/>
+                        <outlet property="toolbar" destination="SAa-QH-f5j" id="QAY-NW-Fd4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6OR-fh-ES0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2087.1999999999998" y="127.28635682158921"/>
+        </scene>
+        <!--Card Crop View Controller-->
+        <scene sceneID="xe3-Kd-ozN">
+            <objects>
+                <viewController id="x1F-hW-lUg" customClass="IDCardCropViewController" customModule="treez" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="odR-Jt-8gc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgx-Md-55K">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Cancel" id="804-6q-Wnx">
+                                        <connections>
+                                            <action selector="onTouchCancel:" destination="x1F-hW-lUg" id="DPc-uk-pEM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rKU-Y1-aed"/>
+                                    <barButtonItem title="Crop" id="yHx-hE-k0O">
+                                        <connections>
+                                            <action selector="onTouchCrop:" destination="x1F-hW-lUg" id="jyc-NY-E7c"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCe-PD-dW3" customClass="HorizontalDial" customModule="HorizontalDial">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="rLo-tW-hid"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                        <real key="value" value="-80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tick">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="centerMarkColor">
+                                        <color key="value" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="centerMarkWidth">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="centerMarkRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="markColor">
+                                        <color key="value" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="markWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="markCount">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableRange" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="verticalAlign" value="center"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="centerMarkHeightRatio">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="3CN-Sc-FDg" id="JUX-jK-Ng6"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lCe-PD-dW3" firstAttribute="leading" secondItem="uw2-Ny-qSU" secondAttribute="leading" id="2y4-4Y-3LR"/>
+                            <constraint firstItem="lCe-PD-dW3" firstAttribute="bottom" secondItem="uw2-Ny-qSU" secondAttribute="bottom" id="9NW-52-yh9"/>
+                            <constraint firstItem="tgx-Md-55K" firstAttribute="trailing" secondItem="uw2-Ny-qSU" secondAttribute="trailing" id="cAp-za-KzD"/>
+                            <constraint firstItem="lCe-PD-dW3" firstAttribute="trailing" secondItem="uw2-Ny-qSU" secondAttribute="trailing" id="mjQ-eZ-qqD"/>
+                            <constraint firstItem="tgx-Md-55K" firstAttribute="top" secondItem="odR-Jt-8gc" secondAttribute="top" id="oBy-qE-1pF"/>
+                            <constraint firstItem="tgx-Md-55K" firstAttribute="leading" secondItem="uw2-Ny-qSU" secondAttribute="leading" id="y5V-3C-MLN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uw2-Ny-qSU"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="804-6q-Wnx" id="g25-ff-fPB"/>
+                        <outlet property="cropButton" destination="yHx-hE-k0O" id="lcI-mw-mnT"/>
+                        <outlet property="horizontalDial" destination="lCe-PD-dW3" id="LZr-Gn-Tpn"/>
+                        <outlet property="toolbar" destination="tgx-Md-55K" id="NTw-15-W7R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8k-cg-Gjv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2087" y="817"/>
+        </scene>
+    </scenes>
+</document>

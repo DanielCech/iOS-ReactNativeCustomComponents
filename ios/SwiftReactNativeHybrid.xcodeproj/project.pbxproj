@@ -1,0 +1,1325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C4968481EF012AB00986618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4968471EF012AB00986618 /* AppDelegate.swift */; };
+		0C49684A1EF012AB00986618 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4968491EF012AB00986618 /* FirstViewController.swift */; };
+		0C49684F1EF012AB00986618 /* FirstViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C49684D1EF012AB00986618 /* FirstViewController.storyboard */; };
+		0C4968511EF012AB00986618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C4968501EF012AB00986618 /* Assets.xcassets */; };
+		0C4968541EF012AB00986618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4968521EF012AB00986618 /* LaunchScreen.storyboard */; };
+		0C49685F1EF012AB00986618 /* SwiftReactNativeHybridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C49685E1EF012AB00986618 /* SwiftReactNativeHybridTests.swift */; };
+		0C49686A1EF012AB00986618 /* SwiftReactNativeHybridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4968691EF012AB00986618 /* SwiftReactNativeHybridUITests.swift */; };
+		1937C1C0D1ADE12FA5590552 /* Pods_SwiftReactNativeHybridUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3501558751A4EC5F8F8F35 /* Pods_SwiftReactNativeHybridUITests.framework */; };
+		37604CBE1FA220430072076B /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 37604CBD1FA220430072076B /* main.jsbundle */; };
+		37604CC71FA224E30072076B /* SwiftyDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37604CC61FA224E30072076B /* SwiftyDraw.swift */; };
+		37604CCD1FA226F10072076B /* UIImage+DCExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37604CCC1FA226F10072076B /* UIImage+DCExtensions.swift */; };
+		3792087F1FA215BD0033055A /* SwiftReactNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3792087B1FA215BD0033055A /* SwiftReactNativeBridge.m */; };
+		379208801FA215BD0033055A /* NativeModuleCallSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792087C1FA215BD0033055A /* NativeModuleCallSwift.swift */; };
+		379208811FA215BD0033055A /* NativeModuleJavaScriptCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792087D1FA215BD0033055A /* NativeModuleJavaScriptCallback.swift */; };
+		379208821FA215BD0033055A /* NativeModuleBroadcastToJavaScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792087E1FA215BD0033055A /* NativeModuleBroadcastToJavaScript.swift */; };
+		37B2BC311F7EB29F00D14229 /* UIView+DCExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2BC301F7EB29F00D14229 /* UIView+DCExtensions.swift */; };
+		37D4E1531FA36B0C004BA77D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E13C1FA36B0C004BA77D /* Constants.swift */; };
+		37D4E1541FA36B0C004BA77D /* FocusOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D4E13E1FA36B0C004BA77D /* FocusOverlayView.xib */; };
+		37D4E1551FA36B0C004BA77D /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E13F1FA36B0C004BA77D /* FaceDetector.swift */; };
+		37D4E1561FA36B0C004BA77D /* IDCardScan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D4E1401FA36B0C004BA77D /* IDCardScan.storyboard */; };
+		37D4E1571FA36B0C004BA77D /* PatientFocusOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E1411FA36B0C004BA77D /* PatientFocusOverlayView.swift */; };
+		37D4E1581FA36B0C004BA77D /* FocusOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E1421FA36B0C004BA77D /* FocusOverlayView.swift */; };
+		37D4E1591FA36B0C004BA77D /* IDCardCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E1431FA36B0C004BA77D /* IDCardCropViewController.swift */; };
+		37D4E15A1FA36B0C004BA77D /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E1451FA36B0C004BA77D /* SignatureView.swift */; };
+		37D4E15B1FA36B0C004BA77D /* SignatureViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E1471FA36B0C004BA77D /* SignatureViewManager.m */; };
+		37D4E15C1FA36B0C004BA77D /* BarcodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E1491FA36B0C004BA77D /* BarcodeScanViewController.m */; };
+		37D4E15D1FA36B0C004BA77D /* RMScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E14A1FA36B0C004BA77D /* RMScannerView.m */; };
+		37D4E15E1FA36B0C004BA77D /* RMOutlineBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E14B1FA36B0C004BA77D /* RMOutlineBox.m */; };
+		37D4E15F1FA36B0C004BA77D /* BarcodeScan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D4E14F1FA36B0C004BA77D /* BarcodeScan.storyboard */; };
+		37D4E1601FA36B0C004BA77D /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E1501FA36B0C004BA77D /* ImageUtils.swift */; };
+		37D4E1611FA36B0C004BA77D /* DCToolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E1511FA36B0C004BA77D /* DCToolbox.swift */; };
+		37D4E1621FA36B0C004BA77D /* ScanFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E1521FA36B0C004BA77D /* ScanFlowController.swift */; };
+		37D4E1651FA36BEA004BA77D /* HorizontalDial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4E1641FA36BEA004BA77D /* HorizontalDial.swift */; };
+		37E9BB991F7E42230067DC11 /* Collection+DCExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BB981F7E42230067DC11 /* Collection+DCExtensions.swift */; };
+		37E9BBF81F7E51A00067DC11 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 37E9BBD81F7E519F0067DC11 /* LICENSE.md */; };
+		37E9BBF91F7E51A00067DC11 /* selectedImageGallery@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E9BBDA1F7E519F0067DC11 /* selectedImageGallery@3x.png */; };
+		37E9BBFA1F7E51A00067DC11 /* focusIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E9BBDB1F7E519F0067DC11 /* focusIcon@3x.png */; };
+		37E9BBFB1F7E51A00067DC11 /* ON@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E9BBDC1F7E519F0067DC11 /* ON@3x.png */; };
+		37E9BBFC1F7E51A00067DC11 /* OFF@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E9BBDD1F7E519F0067DC11 /* OFF@3x.png */; };
+		37E9BBFD1F7E51A00067DC11 /* AUTO@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E9BBDE1F7E519F0067DC11 /* AUTO@3x.png */; };
+		37E9BBFE1F7E51A00067DC11 /* cameraIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E9BBDF1F7E519F0067DC11 /* cameraIcon@3x.png */; };
+		37E9BBFF1F7E51A00067DC11 /* CameraMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBE21F7E519F0067DC11 /* CameraMan.swift */; };
+		37E9BC001F7E51A00067DC11 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBE31F7E519F0067DC11 /* CameraView.swift */; };
+		37E9BC011F7E51A00067DC11 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBE41F7E519F0067DC11 /* ImagePickerController.swift */; };
+		37E9BC021F7E51A00067DC11 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBE61F7E519F0067DC11 /* TopView.swift */; };
+		37E9BC031F7E51A00067DC11 /* ConstraintsSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBE81F7E519F0067DC11 /* ConstraintsSetup.swift */; };
+		37E9BC041F7E51A00067DC11 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBEA1F7E519F0067DC11 /* StackView.swift */; };
+		37E9BC051F7E51A00067DC11 /* ButtonPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBEB1F7E519F0067DC11 /* ButtonPicker.swift */; };
+		37E9BC061F7E51A00067DC11 /* ImageStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBEC1F7E519F0067DC11 /* ImageStack.swift */; };
+		37E9BC071F7E51A00067DC11 /* BottomContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBED1F7E519F0067DC11 /* BottomContainerView.swift */; };
+		37E9BC081F7E51A00067DC11 /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBEE1F7E519F0067DC11 /* AssetManager.swift */; };
+		37E9BC091F7E51A00067DC11 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBEF1F7E519F0067DC11 /* Helper.swift */; };
+		37E9BC0A1F7E51A00067DC11 /* ImageGalleryViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBF11F7E519F0067DC11 /* ImageGalleryViewDataSource.swift */; };
+		37E9BC0B1F7E51A00067DC11 /* ImageGalleryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBF21F7E519F0067DC11 /* ImageGalleryLayout.swift */; };
+		37E9BC0C1F7E51A00067DC11 /* ImageGalleryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBF31F7E519F0067DC11 /* ImageGalleryViewCell.swift */; };
+		37E9BC0D1F7E51A00067DC11 /* ImageGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBF41F7E519F0067DC11 /* ImageGalleryView.swift */; };
+		37E9BC0E1F7E51A00067DC11 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBF51F7E519F0067DC11 /* LocationManager.swift */; };
+		37E9BC0F1F7E51A00067DC11 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BBF61F7E519F0067DC11 /* Configuration.swift */; };
+		37E9BC101F7E51A00067DC11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 37E9BBF71F7E519F0067DC11 /* README.md */; };
+		37F311B71F839360006AB0FC /* UIImage+IGRPhonoTweakExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3118F1F839360006AB0FC /* UIImage+IGRPhonoTweakExtension.swift */; };
+		37F311B81F839360006AB0FC /* CGFloat+IGRPhonoTweakExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311901F839360006AB0FC /* CGFloat+IGRPhonoTweakExtension.swift */; };
+		37F311B91F839360006AB0FC /* CGImage+IGRPhonoTweakExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311911F839360006AB0FC /* CGImage+IGRPhonoTweakExtension.swift */; };
+		37F311BA1F839360006AB0FC /* UIColor+IGRPhonoTweakExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311921F839360006AB0FC /* UIColor+IGRPhonoTweakExtension.swift */; };
+		37F311BB1F839360006AB0FC /* CGPoint+IGRPhonoTweakExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311931F839360006AB0FC /* CGPoint+IGRPhonoTweakExtension.swift */; };
+		37F311BC1F839360006AB0FC /* IGRPhotoTweakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311941F839360006AB0FC /* IGRPhotoTweakViewController.swift */; };
+		37F311BD1F839360006AB0FC /* IGRPhotoTweakConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311961F839360006AB0FC /* IGRPhotoTweakConstants.swift */; };
+		37F311BE1F839360006AB0FC /* IGRPhotoTweakView+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311981F839360006AB0FC /* IGRPhotoTweakView+Angle.swift */; };
+		37F311BF1F839360006AB0FC /* IGRPhotoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3119A1F839360006AB0FC /* IGRPhotoContentView.swift */; };
+		37F311C01F839360006AB0FC /* IGRPhotoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3119B1F839360006AB0FC /* IGRPhotoScrollView.swift */; };
+		37F311C11F839360006AB0FC /* IGRPhotoTweakView+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3119C1F839360006AB0FC /* IGRPhotoTweakView+UIScrollView.swift */; };
+		37F311C21F839360006AB0FC /* IGRPhotoTweakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3119D1F839360006AB0FC /* IGRPhotoTweakView.swift */; };
+		37F311C31F839360006AB0FC /* IGRPhotoTweakView+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3119E1F839360006AB0FC /* IGRPhotoTweakView+AspectRatio.swift */; };
+		37F311C41F839360006AB0FC /* IGRPhotoTweakView+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3119F1F839360006AB0FC /* IGRPhotoTweakView+NSLayoutConstraint.swift */; };
+		37F311C51F839360006AB0FC /* IGRPhotoTweakView+Touch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311A01F839360006AB0FC /* IGRPhotoTweakView+Touch.swift */; };
+		37F311C61F839360006AB0FC /* IGRCropView+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311A21F839360006AB0FC /* IGRCropView+NSLayoutConstraint.swift */; };
+		37F311C71F839360006AB0FC /* IGRCropView+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311A31F839360006AB0FC /* IGRCropView+Lines.swift */; };
+		37F311C81F839360006AB0FC /* IGRCropView+UITouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311A41F839360006AB0FC /* IGRCropView+UITouch.swift */; };
+		37F311C91F839360006AB0FC /* IGRCropView+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311A51F839360006AB0FC /* IGRCropView+AspectRatio.swift */; };
+		37F311CA1F839360006AB0FC /* IGRCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311A61F839360006AB0FC /* IGRCropView.swift */; };
+		37F311CB1F839360006AB0FC /* IGRCropMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311A81F839360006AB0FC /* IGRCropMaskView.swift */; };
+		37F311CC1F839360006AB0FC /* IGRCropCornerLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311AA1F839360006AB0FC /* IGRCropCornerLine.swift */; };
+		37F311CD1F839360006AB0FC /* IGRCropGridLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311AB1F839360006AB0FC /* IGRCropGridLine.swift */; };
+		37F311CE1F839360006AB0FC /* IGRCropCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311AC1F839360006AB0FC /* IGRCropCornerView.swift */; };
+		37F311CF1F839360006AB0FC /* IGRCropLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311AD1F839360006AB0FC /* IGRCropLine.swift */; };
+		37F311D01F839360006AB0FC /* IGRPhotoTweakView+Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311AE1F839360006AB0FC /* IGRPhotoTweakView+Customization.swift */; };
+		37F311D11F839360006AB0FC /* IGRPhotoTweakView+Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311AF1F839360006AB0FC /* IGRPhotoTweakView+Mask.swift */; };
+		37F311D21F839360006AB0FC /* IGRPhotoTweakView+IGRCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311B01F839360006AB0FC /* IGRPhotoTweakView+IGRCropView.swift */; };
+		37F311D31F839360006AB0FC /* IGRPhotoTweakViewController+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311B11F839360006AB0FC /* IGRPhotoTweakViewController+Angle.swift */; };
+		37F311D41F839360006AB0FC /* IGRPhotoTweakViewController+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311B21F839360006AB0FC /* IGRPhotoTweakViewController+AspectRatio.swift */; };
+		37F311D51F839360006AB0FC /* IGRRadianAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311B41F839360006AB0FC /* IGRRadianAngle.swift */; };
+		37F311D61F839360006AB0FC /* IGRPhotoTweakViewController+PHPhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311B51F839360006AB0FC /* IGRPhotoTweakViewController+PHPhotoLibrary.swift */; };
+		37F311D71F839360006AB0FC /* IGRPhotoTweakViewController+Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F311B61F839360006AB0FC /* IGRPhotoTweakViewController+Customization.swift */; };
+		51245CAAA5D00DF4C3D918EA /* Pods_SwiftReactNativeHybrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940C527B1200A8F7B16FDE0A /* Pods_SwiftReactNativeHybrid.framework */; };
+		B9BE0D2B1EF065D50034FF3D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE0D2A1EF065D50034FF3D /* TabBarController.swift */; };
+		CB789553A1AD7220DAD243D6 /* Pods_SwiftReactNativeHybridTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24266F66E8C779087939FEC4 /* Pods_SwiftReactNativeHybridTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C49685B1EF012AB00986618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C49683C1EF012AB00986618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C4968431EF012AB00986618;
+			remoteInfo = SwiftReactNativeHybrid;
+		};
+		0C4968661EF012AB00986618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C49683C1EF012AB00986618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C4968431EF012AB00986618;
+			remoteInfo = SwiftReactNativeHybrid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008468547D780C5BC02D6435 /* Pods-SwiftReactNativeHybridUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftReactNativeHybridUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftReactNativeHybridUITests/Pods-SwiftReactNativeHybridUITests.release.xcconfig"; sourceTree = "<group>"; };
+		09C9843A04EBF70C5BA436FD /* Pods-SwiftReactNativeHybrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftReactNativeHybrid.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftReactNativeHybrid/Pods-SwiftReactNativeHybrid.release.xcconfig"; sourceTree = "<group>"; };
+		0C4968441EF012AB00986618 /* SwiftReactNativeHybrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftReactNativeHybrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C4968471EF012AB00986618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C4968491EF012AB00986618 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		0C49684E1EF012AB00986618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FirstViewController.storyboard; sourceTree = "<group>"; };
+		0C4968501EF012AB00986618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C4968531EF012AB00986618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C4968551EF012AB00986618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C49685A1EF012AB00986618 /* SwiftReactNativeHybridTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftReactNativeHybridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C49685E1EF012AB00986618 /* SwiftReactNativeHybridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftReactNativeHybridTests.swift; sourceTree = "<group>"; };
+		0C4968601EF012AB00986618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C4968651EF012AB00986618 /* SwiftReactNativeHybridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftReactNativeHybridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C4968691EF012AB00986618 /* SwiftReactNativeHybridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftReactNativeHybridUITests.swift; sourceTree = "<group>"; };
+		0C49686B1EF012AB00986618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201C21D4935BD60DCF2CE4C5 /* Pods-SwiftReactNativeHybridTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftReactNativeHybridTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftReactNativeHybridTests/Pods-SwiftReactNativeHybridTests.release.xcconfig"; sourceTree = "<group>"; };
+		24266F66E8C779087939FEC4 /* Pods_SwiftReactNativeHybridTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftReactNativeHybridTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34CF81B8ADA7E1299DF48147 /* Pods-SwiftReactNativeHybridUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftReactNativeHybridUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftReactNativeHybridUITests/Pods-SwiftReactNativeHybridUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37604CBD1FA220430072076B /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = SOURCE_ROOT; };
+		37604CC61FA224E30072076B /* SwiftyDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyDraw.swift; sourceTree = "<group>"; };
+		37604CCC1FA226F10072076B /* UIImage+DCExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+DCExtensions.swift"; sourceTree = "<group>"; };
+		3792087A1FA215BD0033055A /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		3792087B1FA215BD0033055A /* SwiftReactNativeBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftReactNativeBridge.m; sourceTree = "<group>"; };
+		3792087C1FA215BD0033055A /* NativeModuleCallSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeModuleCallSwift.swift; sourceTree = "<group>"; };
+		3792087D1FA215BD0033055A /* NativeModuleJavaScriptCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeModuleJavaScriptCallback.swift; sourceTree = "<group>"; };
+		3792087E1FA215BD0033055A /* NativeModuleBroadcastToJavaScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeModuleBroadcastToJavaScript.swift; sourceTree = "<group>"; };
+		37B2BC301F7EB29F00D14229 /* UIView+DCExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DCExtensions.swift"; sourceTree = "<group>"; };
+		37D4E13C1FA36B0C004BA77D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		37D4E13E1FA36B0C004BA77D /* FocusOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FocusOverlayView.xib; sourceTree = "<group>"; };
+		37D4E13F1FA36B0C004BA77D /* FaceDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetector.swift; sourceTree = "<group>"; };
+		37D4E1401FA36B0C004BA77D /* IDCardScan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IDCardScan.storyboard; sourceTree = "<group>"; };
+		37D4E1411FA36B0C004BA77D /* PatientFocusOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientFocusOverlayView.swift; sourceTree = "<group>"; };
+		37D4E1421FA36B0C004BA77D /* FocusOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusOverlayView.swift; sourceTree = "<group>"; };
+		37D4E1431FA36B0C004BA77D /* IDCardCropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDCardCropViewController.swift; sourceTree = "<group>"; };
+		37D4E1451FA36B0C004BA77D /* SignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
+		37D4E1461FA36B0C004BA77D /* SignatureViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignatureViewManager.h; sourceTree = "<group>"; };
+		37D4E1471FA36B0C004BA77D /* SignatureViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignatureViewManager.m; sourceTree = "<group>"; };
+		37D4E1491FA36B0C004BA77D /* BarcodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScanViewController.m; sourceTree = "<group>"; };
+		37D4E14A1FA36B0C004BA77D /* RMScannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMScannerView.m; sourceTree = "<group>"; };
+		37D4E14B1FA36B0C004BA77D /* RMOutlineBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMOutlineBox.m; sourceTree = "<group>"; };
+		37D4E14C1FA36B0C004BA77D /* BarcodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeScanViewController.h; sourceTree = "<group>"; };
+		37D4E14D1FA36B0C004BA77D /* RMOutlineBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOutlineBox.h; sourceTree = "<group>"; };
+		37D4E14E1FA36B0C004BA77D /* RMScannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMScannerView.h; sourceTree = "<group>"; };
+		37D4E14F1FA36B0C004BA77D /* BarcodeScan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BarcodeScan.storyboard; sourceTree = "<group>"; };
+		37D4E1501FA36B0C004BA77D /* ImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		37D4E1511FA36B0C004BA77D /* DCToolbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCToolbox.swift; sourceTree = "<group>"; };
+		37D4E1521FA36B0C004BA77D /* ScanFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanFlowController.swift; sourceTree = "<group>"; };
+		37D4E1641FA36BEA004BA77D /* HorizontalDial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalDial.swift; sourceTree = "<group>"; };
+		37E9BB981F7E42230067DC11 /* Collection+DCExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+DCExtensions.swift"; sourceTree = "<group>"; };
+		37E9BBD81F7E519F0067DC11 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		37E9BBDA1F7E519F0067DC11 /* selectedImageGallery@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selectedImageGallery@3x.png"; sourceTree = "<group>"; };
+		37E9BBDB1F7E519F0067DC11 /* focusIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "focusIcon@3x.png"; sourceTree = "<group>"; };
+		37E9BBDC1F7E519F0067DC11 /* ON@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ON@3x.png"; sourceTree = "<group>"; };
+		37E9BBDD1F7E519F0067DC11 /* OFF@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OFF@3x.png"; sourceTree = "<group>"; };
+		37E9BBDE1F7E519F0067DC11 /* AUTO@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AUTO@3x.png"; sourceTree = "<group>"; };
+		37E9BBDF1F7E519F0067DC11 /* cameraIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraIcon@3x.png"; sourceTree = "<group>"; };
+		37E9BBE21F7E519F0067DC11 /* CameraMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMan.swift; sourceTree = "<group>"; };
+		37E9BBE31F7E519F0067DC11 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		37E9BBE41F7E519F0067DC11 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		37E9BBE61F7E519F0067DC11 /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		37E9BBE81F7E519F0067DC11 /* ConstraintsSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsSetup.swift; sourceTree = "<group>"; };
+		37E9BBEA1F7E519F0067DC11 /* StackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		37E9BBEB1F7E519F0067DC11 /* ButtonPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPicker.swift; sourceTree = "<group>"; };
+		37E9BBEC1F7E519F0067DC11 /* ImageStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStack.swift; sourceTree = "<group>"; };
+		37E9BBED1F7E519F0067DC11 /* BottomContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomContainerView.swift; sourceTree = "<group>"; };
+		37E9BBEE1F7E519F0067DC11 /* AssetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetManager.swift; sourceTree = "<group>"; };
+		37E9BBEF1F7E519F0067DC11 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		37E9BBF11F7E519F0067DC11 /* ImageGalleryViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryViewDataSource.swift; sourceTree = "<group>"; };
+		37E9BBF21F7E519F0067DC11 /* ImageGalleryLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryLayout.swift; sourceTree = "<group>"; };
+		37E9BBF31F7E519F0067DC11 /* ImageGalleryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryViewCell.swift; sourceTree = "<group>"; };
+		37E9BBF41F7E519F0067DC11 /* ImageGalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryView.swift; sourceTree = "<group>"; };
+		37E9BBF51F7E519F0067DC11 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		37E9BBF61F7E519F0067DC11 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		37E9BBF71F7E519F0067DC11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		37F3118D1F839360006AB0FC /* IGRPhotoTweaks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGRPhotoTweaks.h; sourceTree = "<group>"; };
+		37F3118F1F839360006AB0FC /* UIImage+IGRPhonoTweakExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+IGRPhonoTweakExtension.swift"; sourceTree = "<group>"; };
+		37F311901F839360006AB0FC /* CGFloat+IGRPhonoTweakExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+IGRPhonoTweakExtension.swift"; sourceTree = "<group>"; };
+		37F311911F839360006AB0FC /* CGImage+IGRPhonoTweakExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+IGRPhonoTweakExtension.swift"; sourceTree = "<group>"; };
+		37F311921F839360006AB0FC /* UIColor+IGRPhonoTweakExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+IGRPhonoTweakExtension.swift"; sourceTree = "<group>"; };
+		37F311931F839360006AB0FC /* CGPoint+IGRPhonoTweakExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+IGRPhonoTweakExtension.swift"; sourceTree = "<group>"; };
+		37F311941F839360006AB0FC /* IGRPhotoTweakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRPhotoTweakViewController.swift; sourceTree = "<group>"; };
+		37F311961F839360006AB0FC /* IGRPhotoTweakConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRPhotoTweakConstants.swift; sourceTree = "<group>"; };
+		37F311981F839360006AB0FC /* IGRPhotoTweakView+Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakView+Angle.swift"; sourceTree = "<group>"; };
+		37F3119A1F839360006AB0FC /* IGRPhotoContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRPhotoContentView.swift; sourceTree = "<group>"; };
+		37F3119B1F839360006AB0FC /* IGRPhotoScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRPhotoScrollView.swift; sourceTree = "<group>"; };
+		37F3119C1F839360006AB0FC /* IGRPhotoTweakView+UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakView+UIScrollView.swift"; sourceTree = "<group>"; };
+		37F3119D1F839360006AB0FC /* IGRPhotoTweakView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRPhotoTweakView.swift; sourceTree = "<group>"; };
+		37F3119E1F839360006AB0FC /* IGRPhotoTweakView+AspectRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakView+AspectRatio.swift"; sourceTree = "<group>"; };
+		37F3119F1F839360006AB0FC /* IGRPhotoTweakView+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakView+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		37F311A01F839360006AB0FC /* IGRPhotoTweakView+Touch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakView+Touch.swift"; sourceTree = "<group>"; };
+		37F311A21F839360006AB0FC /* IGRCropView+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRCropView+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		37F311A31F839360006AB0FC /* IGRCropView+Lines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRCropView+Lines.swift"; sourceTree = "<group>"; };
+		37F311A41F839360006AB0FC /* IGRCropView+UITouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRCropView+UITouch.swift"; sourceTree = "<group>"; };
+		37F311A51F839360006AB0FC /* IGRCropView+AspectRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRCropView+AspectRatio.swift"; sourceTree = "<group>"; };
+		37F311A61F839360006AB0FC /* IGRCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRCropView.swift; sourceTree = "<group>"; };
+		37F311A81F839360006AB0FC /* IGRCropMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRCropMaskView.swift; sourceTree = "<group>"; };
+		37F311AA1F839360006AB0FC /* IGRCropCornerLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRCropCornerLine.swift; sourceTree = "<group>"; };
+		37F311AB1F839360006AB0FC /* IGRCropGridLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRCropGridLine.swift; sourceTree = "<group>"; };
+		37F311AC1F839360006AB0FC /* IGRCropCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRCropCornerView.swift; sourceTree = "<group>"; };
+		37F311AD1F839360006AB0FC /* IGRCropLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRCropLine.swift; sourceTree = "<group>"; };
+		37F311AE1F839360006AB0FC /* IGRPhotoTweakView+Customization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakView+Customization.swift"; sourceTree = "<group>"; };
+		37F311AF1F839360006AB0FC /* IGRPhotoTweakView+Mask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakView+Mask.swift"; sourceTree = "<group>"; };
+		37F311B01F839360006AB0FC /* IGRPhotoTweakView+IGRCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakView+IGRCropView.swift"; sourceTree = "<group>"; };
+		37F311B11F839360006AB0FC /* IGRPhotoTweakViewController+Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakViewController+Angle.swift"; sourceTree = "<group>"; };
+		37F311B21F839360006AB0FC /* IGRPhotoTweakViewController+AspectRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakViewController+AspectRatio.swift"; sourceTree = "<group>"; };
+		37F311B41F839360006AB0FC /* IGRRadianAngle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGRRadianAngle.swift; sourceTree = "<group>"; };
+		37F311B51F839360006AB0FC /* IGRPhotoTweakViewController+PHPhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakViewController+PHPhotoLibrary.swift"; sourceTree = "<group>"; };
+		37F311B61F839360006AB0FC /* IGRPhotoTweakViewController+Customization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IGRPhotoTweakViewController+Customization.swift"; sourceTree = "<group>"; };
+		47058CF3544BDD701942E042 /* Pods-SwiftReactNativeHybridTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftReactNativeHybridTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftReactNativeHybridTests/Pods-SwiftReactNativeHybridTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E3501558751A4EC5F8F8F35 /* Pods_SwiftReactNativeHybridUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftReactNativeHybridUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DF2F0B90572AFFCAF0D0B2 /* Pods-SwiftReactNativeHybrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftReactNativeHybrid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftReactNativeHybrid/Pods-SwiftReactNativeHybrid.debug.xcconfig"; sourceTree = "<group>"; };
+		940C527B1200A8F7B16FDE0A /* Pods_SwiftReactNativeHybrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftReactNativeHybrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BE0D2A1EF065D50034FF3D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C4968411EF012AB00986618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51245CAAA5D00DF4C3D918EA /* Pods_SwiftReactNativeHybrid.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4968571EF012AB00986618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB789553A1AD7220DAD243D6 /* Pods_SwiftReactNativeHybridTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4968621EF012AB00986618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1937C1C0D1ADE12FA5590552 /* Pods_SwiftReactNativeHybridUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C49683B1EF012AB00986618 = {
+			isa = PBXGroup;
+			children = (
+				0C4968461EF012AB00986618 /* SwiftReactNativeHybrid */,
+				0C49685D1EF012AB00986618 /* SwiftReactNativeHybridTests */,
+				0C4968681EF012AB00986618 /* SwiftReactNativeHybridUITests */,
+				0C4968451EF012AB00986618 /* Products */,
+				26619B18FFE58C2DF29B52C4 /* Pods */,
+				99E05CC8A3362F67FFD6BD55 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C4968451EF012AB00986618 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C4968441EF012AB00986618 /* SwiftReactNativeHybrid.app */,
+				0C49685A1EF012AB00986618 /* SwiftReactNativeHybridTests.xctest */,
+				0C4968651EF012AB00986618 /* SwiftReactNativeHybridUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C4968461EF012AB00986618 /* SwiftReactNativeHybrid */ = {
+			isa = PBXGroup;
+			children = (
+				37D4E13B1FA36B0C004BA77D /* NativeComponents */,
+				37604CBD1FA220430072076B /* main.jsbundle */,
+				0C4968471EF012AB00986618 /* AppDelegate.swift */,
+				37E9BB971F7E41FC0067DC11 /* Extensions */,
+				37E9BBD61F7E519F0067DC11 /* Libraries */,
+				379208791FA215BD0033055A /* NativeBridge */,
+				0C4968501EF012AB00986618 /* Assets.xcassets */,
+				0C49684D1EF012AB00986618 /* FirstViewController.storyboard */,
+				0C4968491EF012AB00986618 /* FirstViewController.swift */,
+				0C4968551EF012AB00986618 /* Info.plist */,
+				0C4968521EF012AB00986618 /* LaunchScreen.storyboard */,
+				B9BE0D2A1EF065D50034FF3D /* TabBarController.swift */,
+			);
+			path = SwiftReactNativeHybrid;
+			sourceTree = "<group>";
+		};
+		0C49685D1EF012AB00986618 /* SwiftReactNativeHybridTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C49685E1EF012AB00986618 /* SwiftReactNativeHybridTests.swift */,
+				0C4968601EF012AB00986618 /* Info.plist */,
+			);
+			path = SwiftReactNativeHybridTests;
+			sourceTree = "<group>";
+		};
+		0C4968681EF012AB00986618 /* SwiftReactNativeHybridUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C4968691EF012AB00986618 /* SwiftReactNativeHybridUITests.swift */,
+				0C49686B1EF012AB00986618 /* Info.plist */,
+			);
+			path = SwiftReactNativeHybridUITests;
+			sourceTree = "<group>";
+		};
+		26619B18FFE58C2DF29B52C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73DF2F0B90572AFFCAF0D0B2 /* Pods-SwiftReactNativeHybrid.debug.xcconfig */,
+				09C9843A04EBF70C5BA436FD /* Pods-SwiftReactNativeHybrid.release.xcconfig */,
+				47058CF3544BDD701942E042 /* Pods-SwiftReactNativeHybridTests.debug.xcconfig */,
+				201C21D4935BD60DCF2CE4C5 /* Pods-SwiftReactNativeHybridTests.release.xcconfig */,
+				34CF81B8ADA7E1299DF48147 /* Pods-SwiftReactNativeHybridUITests.debug.xcconfig */,
+				008468547D780C5BC02D6435 /* Pods-SwiftReactNativeHybridUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		37604CC51FA224E30072076B /* SwiftyDraw */ = {
+			isa = PBXGroup;
+			children = (
+				37604CC61FA224E30072076B /* SwiftyDraw.swift */,
+			);
+			path = SwiftyDraw;
+			sourceTree = "<group>";
+		};
+		379208791FA215BD0033055A /* NativeBridge */ = {
+			isa = PBXGroup;
+			children = (
+				3792087A1FA215BD0033055A /* BridgingHeader.h */,
+				3792087B1FA215BD0033055A /* SwiftReactNativeBridge.m */,
+				3792087C1FA215BD0033055A /* NativeModuleCallSwift.swift */,
+				3792087D1FA215BD0033055A /* NativeModuleJavaScriptCallback.swift */,
+				3792087E1FA215BD0033055A /* NativeModuleBroadcastToJavaScript.swift */,
+			);
+			path = NativeBridge;
+			sourceTree = "<group>";
+		};
+		37D4E13B1FA36B0C004BA77D /* NativeComponents */ = {
+			isa = PBXGroup;
+			children = (
+				37D4E13C1FA36B0C004BA77D /* Constants.swift */,
+				37D4E13D1FA36B0C004BA77D /* PhotoPicker */,
+				37D4E1441FA36B0C004BA77D /* Signature */,
+				37D4E1481FA36B0C004BA77D /* BarcodeScanner */,
+				37D4E1501FA36B0C004BA77D /* ImageUtils.swift */,
+				37D4E1511FA36B0C004BA77D /* DCToolbox.swift */,
+				37D4E1521FA36B0C004BA77D /* ScanFlowController.swift */,
+			);
+			path = NativeComponents;
+			sourceTree = "<group>";
+		};
+		37D4E13D1FA36B0C004BA77D /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				37D4E13E1FA36B0C004BA77D /* FocusOverlayView.xib */,
+				37D4E13F1FA36B0C004BA77D /* FaceDetector.swift */,
+				37D4E1401FA36B0C004BA77D /* IDCardScan.storyboard */,
+				37D4E1411FA36B0C004BA77D /* PatientFocusOverlayView.swift */,
+				37D4E1421FA36B0C004BA77D /* FocusOverlayView.swift */,
+				37D4E1431FA36B0C004BA77D /* IDCardCropViewController.swift */,
+			);
+			path = PhotoPicker;
+			sourceTree = "<group>";
+		};
+		37D4E1441FA36B0C004BA77D /* Signature */ = {
+			isa = PBXGroup;
+			children = (
+				37D4E1451FA36B0C004BA77D /* SignatureView.swift */,
+				37D4E1461FA36B0C004BA77D /* SignatureViewManager.h */,
+				37D4E1471FA36B0C004BA77D /* SignatureViewManager.m */,
+			);
+			path = Signature;
+			sourceTree = "<group>";
+		};
+		37D4E1481FA36B0C004BA77D /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				37D4E1491FA36B0C004BA77D /* BarcodeScanViewController.m */,
+				37D4E14A1FA36B0C004BA77D /* RMScannerView.m */,
+				37D4E14B1FA36B0C004BA77D /* RMOutlineBox.m */,
+				37D4E14C1FA36B0C004BA77D /* BarcodeScanViewController.h */,
+				37D4E14D1FA36B0C004BA77D /* RMOutlineBox.h */,
+				37D4E14E1FA36B0C004BA77D /* RMScannerView.h */,
+				37D4E14F1FA36B0C004BA77D /* BarcodeScan.storyboard */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		37D4E1631FA36BEA004BA77D /* HorizontalDial */ = {
+			isa = PBXGroup;
+			children = (
+				37D4E1641FA36BEA004BA77D /* HorizontalDial.swift */,
+			);
+			path = HorizontalDial;
+			sourceTree = "<group>";
+		};
+		37E9BB971F7E41FC0067DC11 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37604CCC1FA226F10072076B /* UIImage+DCExtensions.swift */,
+				37B2BC301F7EB29F00D14229 /* UIView+DCExtensions.swift */,
+				37E9BB981F7E42230067DC11 /* Collection+DCExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		37E9BBD61F7E519F0067DC11 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				37D4E1631FA36BEA004BA77D /* HorizontalDial */,
+				37604CC51FA224E30072076B /* SwiftyDraw */,
+				37F3118C1F839360006AB0FC /* IGRPhotoTweaks */,
+				37E9BBD71F7E519F0067DC11 /* ImagePicker */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		37E9BBD71F7E519F0067DC11 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				37E9BBD81F7E519F0067DC11 /* LICENSE.md */,
+				37E9BBD91F7E519F0067DC11 /* Images */,
+				37E9BBE01F7E519F0067DC11 /* Source */,
+				37E9BBF71F7E519F0067DC11 /* README.md */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		37E9BBD91F7E519F0067DC11 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				37E9BBDA1F7E519F0067DC11 /* selectedImageGallery@3x.png */,
+				37E9BBDB1F7E519F0067DC11 /* focusIcon@3x.png */,
+				37E9BBDC1F7E519F0067DC11 /* ON@3x.png */,
+				37E9BBDD1F7E519F0067DC11 /* OFF@3x.png */,
+				37E9BBDE1F7E519F0067DC11 /* AUTO@3x.png */,
+				37E9BBDF1F7E519F0067DC11 /* cameraIcon@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		37E9BBE01F7E519F0067DC11 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				37E9BBE11F7E519F0067DC11 /* CameraView */,
+				37E9BBE41F7E519F0067DC11 /* ImagePickerController.swift */,
+				37E9BBE51F7E519F0067DC11 /* TopView */,
+				37E9BBE71F7E519F0067DC11 /* Extensions */,
+				37E9BBE91F7E519F0067DC11 /* BottomView */,
+				37E9BBEE1F7E519F0067DC11 /* AssetManager.swift */,
+				37E9BBEF1F7E519F0067DC11 /* Helper.swift */,
+				37E9BBF01F7E519F0067DC11 /* ImageGallery */,
+				37E9BBF51F7E519F0067DC11 /* LocationManager.swift */,
+				37E9BBF61F7E519F0067DC11 /* Configuration.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		37E9BBE11F7E519F0067DC11 /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				37E9BBE21F7E519F0067DC11 /* CameraMan.swift */,
+				37E9BBE31F7E519F0067DC11 /* CameraView.swift */,
+			);
+			path = CameraView;
+			sourceTree = "<group>";
+		};
+		37E9BBE51F7E519F0067DC11 /* TopView */ = {
+			isa = PBXGroup;
+			children = (
+				37E9BBE61F7E519F0067DC11 /* TopView.swift */,
+			);
+			path = TopView;
+			sourceTree = "<group>";
+		};
+		37E9BBE71F7E519F0067DC11 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37E9BBE81F7E519F0067DC11 /* ConstraintsSetup.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		37E9BBE91F7E519F0067DC11 /* BottomView */ = {
+			isa = PBXGroup;
+			children = (
+				37E9BBEA1F7E519F0067DC11 /* StackView.swift */,
+				37E9BBEB1F7E519F0067DC11 /* ButtonPicker.swift */,
+				37E9BBEC1F7E519F0067DC11 /* ImageStack.swift */,
+				37E9BBED1F7E519F0067DC11 /* BottomContainerView.swift */,
+			);
+			path = BottomView;
+			sourceTree = "<group>";
+		};
+		37E9BBF01F7E519F0067DC11 /* ImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				37E9BBF11F7E519F0067DC11 /* ImageGalleryViewDataSource.swift */,
+				37E9BBF21F7E519F0067DC11 /* ImageGalleryLayout.swift */,
+				37E9BBF31F7E519F0067DC11 /* ImageGalleryViewCell.swift */,
+				37E9BBF41F7E519F0067DC11 /* ImageGalleryView.swift */,
+			);
+			path = ImageGallery;
+			sourceTree = "<group>";
+		};
+		37F3118C1F839360006AB0FC /* IGRPhotoTweaks */ = {
+			isa = PBXGroup;
+			children = (
+				37F3118D1F839360006AB0FC /* IGRPhotoTweaks.h */,
+				37F3118E1F839360006AB0FC /* Category */,
+				37F311941F839360006AB0FC /* IGRPhotoTweakViewController.swift */,
+				37F311951F839360006AB0FC /* Constants */,
+				37F311971F839360006AB0FC /* PhotoTweakView */,
+				37F311B11F839360006AB0FC /* IGRPhotoTweakViewController+Angle.swift */,
+				37F311B21F839360006AB0FC /* IGRPhotoTweakViewController+AspectRatio.swift */,
+				37F311B31F839360006AB0FC /* Helper */,
+				37F311B51F839360006AB0FC /* IGRPhotoTweakViewController+PHPhotoLibrary.swift */,
+				37F311B61F839360006AB0FC /* IGRPhotoTweakViewController+Customization.swift */,
+			);
+			path = IGRPhotoTweaks;
+			sourceTree = "<group>";
+		};
+		37F3118E1F839360006AB0FC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				37F3118F1F839360006AB0FC /* UIImage+IGRPhonoTweakExtension.swift */,
+				37F311901F839360006AB0FC /* CGFloat+IGRPhonoTweakExtension.swift */,
+				37F311911F839360006AB0FC /* CGImage+IGRPhonoTweakExtension.swift */,
+				37F311921F839360006AB0FC /* UIColor+IGRPhonoTweakExtension.swift */,
+				37F311931F839360006AB0FC /* CGPoint+IGRPhonoTweakExtension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		37F311951F839360006AB0FC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				37F311961F839360006AB0FC /* IGRPhotoTweakConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		37F311971F839360006AB0FC /* PhotoTweakView */ = {
+			isa = PBXGroup;
+			children = (
+				37F311981F839360006AB0FC /* IGRPhotoTweakView+Angle.swift */,
+				37F311991F839360006AB0FC /* ScrollViews */,
+				37F3119C1F839360006AB0FC /* IGRPhotoTweakView+UIScrollView.swift */,
+				37F3119D1F839360006AB0FC /* IGRPhotoTweakView.swift */,
+				37F3119E1F839360006AB0FC /* IGRPhotoTweakView+AspectRatio.swift */,
+				37F3119F1F839360006AB0FC /* IGRPhotoTweakView+NSLayoutConstraint.swift */,
+				37F311A01F839360006AB0FC /* IGRPhotoTweakView+Touch.swift */,
+				37F311A11F839360006AB0FC /* CropView */,
+				37F311AE1F839360006AB0FC /* IGRPhotoTweakView+Customization.swift */,
+				37F311AF1F839360006AB0FC /* IGRPhotoTweakView+Mask.swift */,
+				37F311B01F839360006AB0FC /* IGRPhotoTweakView+IGRCropView.swift */,
+			);
+			path = PhotoTweakView;
+			sourceTree = "<group>";
+		};
+		37F311991F839360006AB0FC /* ScrollViews */ = {
+			isa = PBXGroup;
+			children = (
+				37F3119A1F839360006AB0FC /* IGRPhotoContentView.swift */,
+				37F3119B1F839360006AB0FC /* IGRPhotoScrollView.swift */,
+			);
+			path = ScrollViews;
+			sourceTree = "<group>";
+		};
+		37F311A11F839360006AB0FC /* CropView */ = {
+			isa = PBXGroup;
+			children = (
+				37F311A21F839360006AB0FC /* IGRCropView+NSLayoutConstraint.swift */,
+				37F311A31F839360006AB0FC /* IGRCropView+Lines.swift */,
+				37F311A41F839360006AB0FC /* IGRCropView+UITouch.swift */,
+				37F311A51F839360006AB0FC /* IGRCropView+AspectRatio.swift */,
+				37F311A61F839360006AB0FC /* IGRCropView.swift */,
+				37F311A71F839360006AB0FC /* Mask */,
+				37F311A91F839360006AB0FC /* Lines */,
+			);
+			path = CropView;
+			sourceTree = "<group>";
+		};
+		37F311A71F839360006AB0FC /* Mask */ = {
+			isa = PBXGroup;
+			children = (
+				37F311A81F839360006AB0FC /* IGRCropMaskView.swift */,
+			);
+			path = Mask;
+			sourceTree = "<group>";
+		};
+		37F311A91F839360006AB0FC /* Lines */ = {
+			isa = PBXGroup;
+			children = (
+				37F311AA1F839360006AB0FC /* IGRCropCornerLine.swift */,
+				37F311AB1F839360006AB0FC /* IGRCropGridLine.swift */,
+				37F311AC1F839360006AB0FC /* IGRCropCornerView.swift */,
+				37F311AD1F839360006AB0FC /* IGRCropLine.swift */,
+			);
+			path = Lines;
+			sourceTree = "<group>";
+		};
+		37F311B31F839360006AB0FC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				37F311B41F839360006AB0FC /* IGRRadianAngle.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		99E05CC8A3362F67FFD6BD55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				940C527B1200A8F7B16FDE0A /* Pods_SwiftReactNativeHybrid.framework */,
+				24266F66E8C779087939FEC4 /* Pods_SwiftReactNativeHybridTests.framework */,
+				6E3501558751A4EC5F8F8F35 /* Pods_SwiftReactNativeHybridUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C4968431EF012AB00986618 /* SwiftReactNativeHybrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C49686E1EF012AB00986618 /* Build configuration list for PBXNativeTarget "SwiftReactNativeHybrid" */;
+			buildPhases = (
+				87EE979CFEFF71399648B3AE /* [CP] Check Pods Manifest.lock */,
+				0C4968401EF012AB00986618 /* Sources */,
+				0C4968411EF012AB00986618 /* Frameworks */,
+				0C4968421EF012AB00986618 /* Resources */,
+				B9362D801EF037F200FF5601 /* Bundle React Native code and images */,
+				E3E22A4BBFD898068DB02728 /* [CP] Embed Pods Frameworks */,
+				C17D5D304A9C133E001B3188 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftReactNativeHybrid;
+			productName = SwiftReactNativeHybrid;
+			productReference = 0C4968441EF012AB00986618 /* SwiftReactNativeHybrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C4968591EF012AB00986618 /* SwiftReactNativeHybridTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C4968711EF012AB00986618 /* Build configuration list for PBXNativeTarget "SwiftReactNativeHybridTests" */;
+			buildPhases = (
+				DA6498C175B956145791C98F /* [CP] Check Pods Manifest.lock */,
+				0C4968561EF012AB00986618 /* Sources */,
+				0C4968571EF012AB00986618 /* Frameworks */,
+				0C4968581EF012AB00986618 /* Resources */,
+				7B8C6DF812B32D8A97671A6B /* [CP] Embed Pods Frameworks */,
+				4C99F4C2E530BB51F778B05D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C49685C1EF012AB00986618 /* PBXTargetDependency */,
+			);
+			name = SwiftReactNativeHybridTests;
+			productName = SwiftReactNativeHybridTests;
+			productReference = 0C49685A1EF012AB00986618 /* SwiftReactNativeHybridTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C4968641EF012AB00986618 /* SwiftReactNativeHybridUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C4968741EF012AB00986618 /* Build configuration list for PBXNativeTarget "SwiftReactNativeHybridUITests" */;
+			buildPhases = (
+				D356F2A620BD61A63AABB6B0 /* [CP] Check Pods Manifest.lock */,
+				0C4968611EF012AB00986618 /* Sources */,
+				0C4968621EF012AB00986618 /* Frameworks */,
+				0C4968631EF012AB00986618 /* Resources */,
+				AAF71C842896D99C334A29EA /* [CP] Embed Pods Frameworks */,
+				2CB86A4155E14021794658D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C4968671EF012AB00986618 /* PBXTargetDependency */,
+			);
+			name = SwiftReactNativeHybridUITests;
+			productName = SwiftReactNativeHybridUITests;
+			productReference = 0C4968651EF012AB00986618 /* SwiftReactNativeHybridUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C49683C1EF012AB00986618 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Solium Capital Inc.";
+				TargetAttributes = {
+					0C4968431EF012AB00986618 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2A58B7F5DW;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					0C4968591EF012AB00986618 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0C4968431EF012AB00986618;
+					};
+					0C4968641EF012AB00986618 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0C4968431EF012AB00986618;
+					};
+				};
+			};
+			buildConfigurationList = 0C49683F1EF012AB00986618 /* Build configuration list for PBXProject "SwiftReactNativeHybrid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C49683B1EF012AB00986618;
+			productRefGroup = 0C4968451EF012AB00986618 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C4968431EF012AB00986618 /* SwiftReactNativeHybrid */,
+				0C4968591EF012AB00986618 /* SwiftReactNativeHybridTests */,
+				0C4968641EF012AB00986618 /* SwiftReactNativeHybridUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C4968421EF012AB00986618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E9BBF81F7E51A00067DC11 /* LICENSE.md in Resources */,
+				0C4968541EF012AB00986618 /* LaunchScreen.storyboard in Resources */,
+				0C4968511EF012AB00986618 /* Assets.xcassets in Resources */,
+				37E9BBF91F7E51A00067DC11 /* selectedImageGallery@3x.png in Resources */,
+				37E9BBFD1F7E51A00067DC11 /* AUTO@3x.png in Resources */,
+				37604CBE1FA220430072076B /* main.jsbundle in Resources */,
+				37E9BBFB1F7E51A00067DC11 /* ON@3x.png in Resources */,
+				37E9BC101F7E51A00067DC11 /* README.md in Resources */,
+				37E9BBFC1F7E51A00067DC11 /* OFF@3x.png in Resources */,
+				37E9BBFA1F7E51A00067DC11 /* focusIcon@3x.png in Resources */,
+				37D4E1561FA36B0C004BA77D /* IDCardScan.storyboard in Resources */,
+				0C49684F1EF012AB00986618 /* FirstViewController.storyboard in Resources */,
+				37E9BBFE1F7E51A00067DC11 /* cameraIcon@3x.png in Resources */,
+				37D4E1541FA36B0C004BA77D /* FocusOverlayView.xib in Resources */,
+				37D4E15F1FA36B0C004BA77D /* BarcodeScan.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4968581EF012AB00986618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4968631EF012AB00986618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CB86A4155E14021794658D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftReactNativeHybridUITests/Pods-SwiftReactNativeHybridUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C99F4C2E530BB51F778B05D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftReactNativeHybridTests/Pods-SwiftReactNativeHybridTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B8C6DF812B32D8A97671A6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftReactNativeHybridTests/Pods-SwiftReactNativeHybridTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87EE979CFEFF71399648B3AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftReactNativeHybrid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF71C842896D99C334A29EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftReactNativeHybridUITests/Pods-SwiftReactNativeHybridUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9362D801EF037F200FF5601 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
+		};
+		C17D5D304A9C133E001B3188 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftReactNativeHybrid/Pods-SwiftReactNativeHybrid-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D356F2A620BD61A63AABB6B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftReactNativeHybridUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA6498C175B956145791C98F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftReactNativeHybridTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3E22A4BBFD898068DB02728 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftReactNativeHybrid/Pods-SwiftReactNativeHybrid-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HorizontalDial/HorizontalDial.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HorizontalDial.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftReactNativeHybrid/Pods-SwiftReactNativeHybrid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C4968401EF012AB00986618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F311C61F839360006AB0FC /* IGRCropView+NSLayoutConstraint.swift in Sources */,
+				37D4E15E1FA36B0C004BA77D /* RMOutlineBox.m in Sources */,
+				37E9BC051F7E51A00067DC11 /* ButtonPicker.swift in Sources */,
+				37F311B91F839360006AB0FC /* CGImage+IGRPhonoTweakExtension.swift in Sources */,
+				37E9BC0C1F7E51A00067DC11 /* ImageGalleryViewCell.swift in Sources */,
+				37F311C11F839360006AB0FC /* IGRPhotoTweakView+UIScrollView.swift in Sources */,
+				37F311BB1F839360006AB0FC /* CGPoint+IGRPhonoTweakExtension.swift in Sources */,
+				37F311D41F839360006AB0FC /* IGRPhotoTweakViewController+AspectRatio.swift in Sources */,
+				37D4E1571FA36B0C004BA77D /* PatientFocusOverlayView.swift in Sources */,
+				37F311D71F839360006AB0FC /* IGRPhotoTweakViewController+Customization.swift in Sources */,
+				37E9BC031F7E51A00067DC11 /* ConstraintsSetup.swift in Sources */,
+				37E9BC001F7E51A00067DC11 /* CameraView.swift in Sources */,
+				37F311D11F839360006AB0FC /* IGRPhotoTweakView+Mask.swift in Sources */,
+				B9BE0D2B1EF065D50034FF3D /* TabBarController.swift in Sources */,
+				37F311C71F839360006AB0FC /* IGRCropView+Lines.swift in Sources */,
+				37E9BC061F7E51A00067DC11 /* ImageStack.swift in Sources */,
+				37D4E15A1FA36B0C004BA77D /* SignatureView.swift in Sources */,
+				37F311B71F839360006AB0FC /* UIImage+IGRPhonoTweakExtension.swift in Sources */,
+				37F311B81F839360006AB0FC /* CGFloat+IGRPhonoTweakExtension.swift in Sources */,
+				37604CC71FA224E30072076B /* SwiftyDraw.swift in Sources */,
+				37E9BBFF1F7E51A00067DC11 /* CameraMan.swift in Sources */,
+				37B2BC311F7EB29F00D14229 /* UIView+DCExtensions.swift in Sources */,
+				37F311D61F839360006AB0FC /* IGRPhotoTweakViewController+PHPhotoLibrary.swift in Sources */,
+				37F311C01F839360006AB0FC /* IGRPhotoScrollView.swift in Sources */,
+				37E9BC041F7E51A00067DC11 /* StackView.swift in Sources */,
+				37D4E1551FA36B0C004BA77D /* FaceDetector.swift in Sources */,
+				37F311D01F839360006AB0FC /* IGRPhotoTweakView+Customization.swift in Sources */,
+				37E9BC0D1F7E51A00067DC11 /* ImageGalleryView.swift in Sources */,
+				37F311BE1F839360006AB0FC /* IGRPhotoTweakView+Angle.swift in Sources */,
+				37E9BC0F1F7E51A00067DC11 /* Configuration.swift in Sources */,
+				37D4E1611FA36B0C004BA77D /* DCToolbox.swift in Sources */,
+				37D4E15D1FA36B0C004BA77D /* RMScannerView.m in Sources */,
+				37D4E1581FA36B0C004BA77D /* FocusOverlayView.swift in Sources */,
+				37D4E1591FA36B0C004BA77D /* IDCardCropViewController.swift in Sources */,
+				37E9BC0A1F7E51A00067DC11 /* ImageGalleryViewDataSource.swift in Sources */,
+				37F311BA1F839360006AB0FC /* UIColor+IGRPhonoTweakExtension.swift in Sources */,
+				0C4968481EF012AB00986618 /* AppDelegate.swift in Sources */,
+				37F311BC1F839360006AB0FC /* IGRPhotoTweakViewController.swift in Sources */,
+				37F311CA1F839360006AB0FC /* IGRCropView.swift in Sources */,
+				37E9BC0E1F7E51A00067DC11 /* LocationManager.swift in Sources */,
+				37D4E15B1FA36B0C004BA77D /* SignatureViewManager.m in Sources */,
+				37F311CC1F839360006AB0FC /* IGRCropCornerLine.swift in Sources */,
+				0C49684A1EF012AB00986618 /* FirstViewController.swift in Sources */,
+				37F311BD1F839360006AB0FC /* IGRPhotoTweakConstants.swift in Sources */,
+				37E9BB991F7E42230067DC11 /* Collection+DCExtensions.swift in Sources */,
+				37F311C21F839360006AB0FC /* IGRPhotoTweakView.swift in Sources */,
+				37F311C31F839360006AB0FC /* IGRPhotoTweakView+AspectRatio.swift in Sources */,
+				3792087F1FA215BD0033055A /* SwiftReactNativeBridge.m in Sources */,
+				37F311D51F839360006AB0FC /* IGRRadianAngle.swift in Sources */,
+				37D4E15C1FA36B0C004BA77D /* BarcodeScanViewController.m in Sources */,
+				379208811FA215BD0033055A /* NativeModuleJavaScriptCallback.swift in Sources */,
+				37E9BC081F7E51A00067DC11 /* AssetManager.swift in Sources */,
+				37E9BC0B1F7E51A00067DC11 /* ImageGalleryLayout.swift in Sources */,
+				37F311C41F839360006AB0FC /* IGRPhotoTweakView+NSLayoutConstraint.swift in Sources */,
+				37604CCD1FA226F10072076B /* UIImage+DCExtensions.swift in Sources */,
+				37F311CD1F839360006AB0FC /* IGRCropGridLine.swift in Sources */,
+				37F311CE1F839360006AB0FC /* IGRCropCornerView.swift in Sources */,
+				37F311C91F839360006AB0FC /* IGRCropView+AspectRatio.swift in Sources */,
+				37F311BF1F839360006AB0FC /* IGRPhotoContentView.swift in Sources */,
+				37E9BC021F7E51A00067DC11 /* TopView.swift in Sources */,
+				379208801FA215BD0033055A /* NativeModuleCallSwift.swift in Sources */,
+				37F311C81F839360006AB0FC /* IGRCropView+UITouch.swift in Sources */,
+				37D4E1531FA36B0C004BA77D /* Constants.swift in Sources */,
+				37D4E1651FA36BEA004BA77D /* HorizontalDial.swift in Sources */,
+				37E9BC011F7E51A00067DC11 /* ImagePickerController.swift in Sources */,
+				37E9BC071F7E51A00067DC11 /* BottomContainerView.swift in Sources */,
+				37F311CB1F839360006AB0FC /* IGRCropMaskView.swift in Sources */,
+				37F311D31F839360006AB0FC /* IGRPhotoTweakViewController+Angle.swift in Sources */,
+				37E9BC091F7E51A00067DC11 /* Helper.swift in Sources */,
+				37F311D21F839360006AB0FC /* IGRPhotoTweakView+IGRCropView.swift in Sources */,
+				37D4E1601FA36B0C004BA77D /* ImageUtils.swift in Sources */,
+				37D4E1621FA36B0C004BA77D /* ScanFlowController.swift in Sources */,
+				37F311CF1F839360006AB0FC /* IGRCropLine.swift in Sources */,
+				379208821FA215BD0033055A /* NativeModuleBroadcastToJavaScript.swift in Sources */,
+				37F311C51F839360006AB0FC /* IGRPhotoTweakView+Touch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4968561EF012AB00986618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C49685F1EF012AB00986618 /* SwiftReactNativeHybridTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4968611EF012AB00986618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C49686A1EF012AB00986618 /* SwiftReactNativeHybridUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C49685C1EF012AB00986618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C4968431EF012AB00986618 /* SwiftReactNativeHybrid */;
+			targetProxy = 0C49685B1EF012AB00986618 /* PBXContainerItemProxy */;
+		};
+		0C4968671EF012AB00986618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C4968431EF012AB00986618 /* SwiftReactNativeHybrid */;
+			targetProxy = 0C4968661EF012AB00986618 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C49684D1EF012AB00986618 /* FirstViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C49684E1EF012AB00986618 /* Base */,
+			);
+			name = FirstViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		0C4968521EF012AB00986618 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C4968531EF012AB00986618 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C49686C1EF012AB00986618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C49686D1EF012AB00986618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C49686F1EF012AB00986618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DF2F0B90572AFFCAF0D0B2 /* Pods-SwiftReactNativeHybrid.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2A58B7F5DW;
+				INFOPLIST_FILE = SwiftReactNativeHybrid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.cech.daniel.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftReactNativeHybrid/NativeBridge/BridgingHeader.h;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		0C4968701EF012AB00986618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09C9843A04EBF70C5BA436FD /* Pods-SwiftReactNativeHybrid.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2A58B7F5DW;
+				INFOPLIST_FILE = SwiftReactNativeHybrid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.cech.daniel.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftReactNativeHybrid/NativeBridge/BridgingHeader.h;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		0C4968721EF012AB00986618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47058CF3544BDD701942E042 /* Pods-SwiftReactNativeHybridTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftReactNativeHybridTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.solium.SwiftReactNativeHybridTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftReactNativeHybrid.app/SwiftReactNativeHybrid";
+			};
+			name = Debug;
+		};
+		0C4968731EF012AB00986618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201C21D4935BD60DCF2CE4C5 /* Pods-SwiftReactNativeHybridTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftReactNativeHybridTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.solium.SwiftReactNativeHybridTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftReactNativeHybrid.app/SwiftReactNativeHybrid";
+			};
+			name = Release;
+		};
+		0C4968751EF012AB00986618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34CF81B8ADA7E1299DF48147 /* Pods-SwiftReactNativeHybridUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SwiftReactNativeHybridUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.solium.SwiftReactNativeHybridUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SwiftReactNativeHybrid;
+			};
+			name = Debug;
+		};
+		0C4968761EF012AB00986618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 008468547D780C5BC02D6435 /* Pods-SwiftReactNativeHybridUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SwiftReactNativeHybridUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.solium.SwiftReactNativeHybridUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SwiftReactNativeHybrid;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C49683F1EF012AB00986618 /* Build configuration list for PBXProject "SwiftReactNativeHybrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C49686C1EF012AB00986618 /* Debug */,
+				0C49686D1EF012AB00986618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C49686E1EF012AB00986618 /* Build configuration list for PBXNativeTarget "SwiftReactNativeHybrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C49686F1EF012AB00986618 /* Debug */,
+				0C4968701EF012AB00986618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C4968711EF012AB00986618 /* Build configuration list for PBXNativeTarget "SwiftReactNativeHybridTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4968721EF012AB00986618 /* Debug */,
+				0C4968731EF012AB00986618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C4968741EF012AB00986618 /* Build configuration list for PBXNativeTarget "SwiftReactNativeHybridUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4968751EF012AB00986618 /* Debug */,
+				0C4968761EF012AB00986618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C49683C1EF012AB00986618 /* Project object */;
+}
