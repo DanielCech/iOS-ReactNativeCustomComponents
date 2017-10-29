@@ -18,3 +18,7 @@ class Constants {
 }
 
 
+extension Notification.Name {
+    static let ClearSignatureNotification = Notification.Name("ClearSignatureNotification")
+}
+

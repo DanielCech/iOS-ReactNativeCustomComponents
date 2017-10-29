@@ -101,7 +101,8 @@ export default class ReactNativeTab extends Component {
 
   clearSignatureButtonClick = () => {
     //console.log(this.signature);
-    this.signature.clearSign(this.signature)
+    //ßthis.signature.clearSignature()
+    NativeModules.NativeModuleCallSwift.clearSignature();
   };
 
   render() {

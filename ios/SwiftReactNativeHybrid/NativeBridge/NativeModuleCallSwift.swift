@@ -25,4 +25,8 @@ class NativeModuleCallSwift : NSObject {
             firstViewController.firstViewLabel.text = greeting
         }
     }
+    
+    func clearSignature() {
+        NotificationCenter.default.post(name: NSNotification.Name.ClearSignatureNotification, object: self)
+    }
 }

@@ -13,6 +13,7 @@
 
 // Type 1: Calling a Swift function from JavaScript
 RCT_EXTERN_METHOD(helloSwift:(NSString *)greeting)
+RCT_EXTERN_METHOD(clearSignature)
 @end
 
 
@@ -26,7 +27,6 @@ RCT_EXTERN_METHOD(scanIDCard:(RCTResponseSenderBlock *)callback)
 RCT_EXTERN_METHOD(scanDoctorReferenceLetter:(RCTResponseSenderBlock *)callback)
 
 @end
-
 
 
 //Type 3: Broadcasting data from Swift and listening in JavaScript

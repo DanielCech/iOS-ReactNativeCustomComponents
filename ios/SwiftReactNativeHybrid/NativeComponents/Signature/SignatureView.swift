@@ -25,6 +25,8 @@ class SignatureView: UIView {
     init() {
         super.init(frame: .zero)
         
+        NotificationCenter.default.addObserver(self, selector: "clearSignature", name: Notification.Name.ClearSignatureNotification, object: nil)
+        
         _drawView = SwiftyDrawView(frame: .zero)
         _drawView.translatesAutoresizingMaskIntoConstraints = false
         _drawView.lineWidth = 3.0
@@ -36,6 +38,10 @@ class SignatureView: UIView {
         _drawView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -43,6 +49,7 @@ class SignatureView: UIView {
     
     @objc func clearSignature() {
         _drawView.clearCanvas()
+        
     }
     
     @objc func getSignature(_ callback: @escaping RCTResponseSenderBlock) {
